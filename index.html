@@ -4,43 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
-    <meta property="og:title" content="Kuis Spesial Lebaran BO2 Prakerja" />
-    <meta property="og:description" content="Uji wawasanmu dan raih posisi puncak di Papan Skor Top 10 Grup BO2!" />
-    <meta property="og:image" content="https://drive.google.com/uc?export=view&id=1FRLzW_EW5cT8PoWVD2z6CZtFEHP7nHmW" />
+    <meta property="og:title" content="Kuis Spesial IE UGM 2005" />
+    <meta property="og:description" content="Reuni virtual seru-seruan mengetes ingatan gelar Sarjana Ekonomi kita!" />
+    <meta property="og:image" content="https://drive.google.com/uc?export=view&id=1vSBnn0W-jgg_rm3u5y6zfqI7zkcFMy4J" />
     <meta property="og:type" content="website" />
 
-    <title>Kuis Spesial Lebaran BO2 Prakerja</title>
+    <title>Kuis Spesial IE UGM 2005</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
     
     <style>
-        body { font-family: 'Nunito', sans-serif; background-color: #064e3b; background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23047857' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); -webkit-tap-highlight-color: transparent; overflow: hidden; }
+        /* TEMA WARNA FEB UGM (Dominan Oranye/Brown) */
+        body { font-family: 'Nunito', sans-serif; background-color: #78350f; background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23b45309' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); -webkit-tap-highlight-color: transparent; overflow: hidden; }
         .glass-panel { background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(10px); }
         .fade-in { animation: fadeIn 0.4s ease-in-out; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
         .option-btn { transition: all 0.2s; border-color: #e5e7eb; background-color: #ffffff; color: #374151; }
-        @media (hover: hover) and (pointer: fine) { .option-btn:hover:not(:disabled) { transform: translateY(-2px); box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); border-color: #60a5fa !important; background-color: #eff6ff !important; } }
+        @media (hover: hover) and (pointer: fine) { .option-btn:hover:not(:disabled) { transform: translateY(-2px); box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); border-color: #c2410c !important; background-color: #fff7ed !important; } }
         .option-btn:active:not(:disabled) { transform: scale(0.98); }
         .btn-wa { background-color: #25D366; color: white; } .btn-wa:hover { background-color: #128C7E; }
-        .avatar-btn { font-size: 1.8rem; transition: all 0.2s; border: 3px solid transparent; cursor: pointer; color: #047857; }
-        .avatar-btn.selected { border-color: #10b981; background-color: #d1fae5; transform: scale(1.1); box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); color: #064e3b; }
-        .custom-scrollbar::-webkit-scrollbar { width: 6px; } .custom-scrollbar::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 10px; } .custom-scrollbar::-webkit-scrollbar-thumb { background: #10b981; border-radius: 10px; }
+        .avatar-btn { font-size: 1.8rem; transition: all 0.2s; border: 3px solid transparent; cursor: pointer; color: #78350f; }
+        .avatar-btn.selected { border-color: #f97316; background-color: #fff7ed; transform: scale(1.1); box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); color: #c2410c; }
+        .custom-scrollbar::-webkit-scrollbar { width: 6px; } .custom-scrollbar::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 10px; } .custom-scrollbar::-webkit-scrollbar-thumb { background: #f97316; border-radius: 10px; }
         .pulse-btn { animation: pulseBtn 1.5s infinite; }
-        @keyframes pulseBtn { 0% { box-shadow: 0 0 0 0 rgba(250, 204, 21, 0.7); } 70% { box-shadow: 0 0 0 15px rgba(250, 204, 21, 0); } 100% { box-shadow: 0 0 0 0 rgba(250, 204, 21, 0); } }
+        @keyframes pulseBtn { 0% { box-shadow: 0 0 0 0 rgba(249, 115, 22, 0.7); } 70% { box-shadow: 0 0 0 15px rgba(249, 115, 22, 0); } 100% { box-shadow: 0 0 0 0 rgba(249, 115, 22, 0); } }
+        
+        /* Animasi Ornamen GDrive Goyang-Goyang */
+        @keyframes float { 0%, 100% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(-15px) rotate(5deg); } }
+        .animate-float { animation: float 3s ease-in-out infinite; }
     </style>
 </head>
 <body class="min-h-screen flex items-center justify-center p-4 text-gray-800">
 
-    <div id="loading-screen" class="absolute inset-0 bg-emerald-900 z-[200] flex flex-col items-center justify-center text-white transition-opacity duration-500">
+    <div id="loading-screen" class="absolute inset-0 bg-amber-950 z-[200] flex flex-col items-center justify-center text-white transition-opacity duration-500">
         <div id="loading-spinner" class="flex flex-col items-center">
-            <i class="fa-solid fa-spinner fa-spin text-6xl text-yellow-400 mb-4"></i>
-            <p class="text-lg font-bold animate-pulse text-emerald-100">Memuat Aset Game...</p>
+            <i class="fa-solid fa-spinner fa-spin text-6xl text-orange-400 mb-4"></i>
+            <p class="text-lg font-bold animate-pulse text-amber-100">Memuat Aset UGM...</p>
         </div>
         <div id="enter-btn-container" class="hidden flex-col items-center">
-            <div class="text-yellow-400 text-7xl mb-6 drop-shadow-lg"><i class="fa-solid fa-mosque"></i></div>
-            <h1 class="text-3xl font-extrabold mb-8 text-center leading-tight">Kuis Spesial<br>Lebaran BO2</h1>
-            <button onclick="enterHome()" class="bg-yellow-500 hover:bg-yellow-600 text-emerald-900 font-black py-4 px-10 rounded-full text-xl pulse-btn transition transform hover:scale-110">
+            <img src="https://drive.google.com/uc?export=view&id=1vSBnn0W-jgg_rm3u5y6zfqI7zkcFMy4J" alt="Ornamen IE UGM" class="w-48 h-48 object-contain drop-shadow-2xl animate-float mb-6 rounded-full border-4 border-orange-400 p-2 bg-white">
+            
+            <h1 class="text-3xl font-extrabold mb-8 text-center leading-tight">Kuis Spesial<br>IE UGM 2005</h1>
+            <button onclick="enterHome()" class="bg-orange-500 hover:bg-orange-600 text-amber-950 font-black py-4 px-10 rounded-full text-xl pulse-btn transition transform hover:scale-110">
                 MASUK <i class="fa-solid fa-arrow-right ml-2"></i>
             </button>
         </div>
@@ -49,14 +55,14 @@
     <div id="app-container" class="glass-panel w-full max-w-md rounded-3xl shadow-2xl overflow-hidden fade-in relative flex flex-col max-h-[90vh]">
         
         <div id="start-screen" class="p-6 text-center overflow-y-auto custom-scrollbar hidden">
-            <div class="text-emerald-600 text-5xl mb-2 animate-bounce"><i class="fa-solid fa-mosque"></i></div>
-            <h1 class="text-2xl font-extrabold text-gray-900 mb-1">Kuis Lebaran</h1>
-            <h2 class="text-md text-emerald-700 font-bold mb-4 bg-emerald-100 py-1 rounded-full mx-auto max-w-[80%]">BO2 Prakerja</h2>
+            <div class="text-orange-600 text-5xl mb-2 animate-bounce"><i class="fa-solid fa-building-columns"></i></div>
+            <h1 class="text-2xl font-extrabold text-gray-900 mb-1">Kuis IE UGM</h1>
+            <h2 class="text-md text-orange-700 font-bold mb-4 bg-orange-100 py-1 rounded-full mx-auto max-w-[80%]">Angkatan 2005</h2>
             
             <div class="bg-gray-50 rounded-2xl p-4 mb-5 border border-gray-200">
                 <p class="text-sm font-bold text-gray-700 mb-3">Pilih Karakter & Nama Anda</p>
                 <div id="avatar-grid" class="grid grid-cols-5 gap-2 mb-4"></div>
-                <input type="text" id="player-name" placeholder="Ketik Nama..." class="w-full px-4 py-3 rounded-xl border-2 border-gray-300 focus:border-emerald-500 focus:outline-none text-center font-bold text-lg transition-all" autocomplete="off" maxlength="15">
+                <input type="text" id="player-name" placeholder="Ketik Nama..." class="w-full px-4 py-3 rounded-xl border-2 border-gray-300 focus:border-orange-500 focus:outline-none text-center font-bold text-lg transition-all" autocomplete="off" maxlength="15">
                 <p id="input-error" class="text-red-500 text-sm mt-2 font-semibold hidden animate-pulse">Pilih karakter & isi nama dulu!</p>
             </div>
             
@@ -69,24 +75,24 @@
             </button>
         </div>
 
-        <div id="countdown-screen" class="hidden absolute inset-0 bg-emerald-800 z-[100] flex flex-col items-center justify-center text-white h-full w-full">
+        <div id="countdown-screen" class="hidden absolute inset-0 bg-amber-800 z-[100] flex flex-col items-center justify-center text-white h-full w-full">
             <h2 class="text-3xl font-bold mb-6 drop-shadow-md">Bersiaplah...</h2>
             <img id="countdown-gif" src="" alt="Countdown 54321" class="w-64 h-64 object-contain drop-shadow-2xl rounded-3xl">
         </div>
 
         <div id="game-screen" class="hidden flex-col h-full overflow-y-auto">
-            <div class="bg-emerald-600 text-white p-3 flex justify-between items-center shadow-md rounded-b-xl sticky top-0 z-10">
+            <div class="bg-orange-600 text-white p-3 flex justify-between items-center shadow-md rounded-b-xl sticky top-0 z-10">
                 <div class="font-bold flex flex-col">
-                    <span class="text-[10px] text-emerald-200 uppercase">Skor</span>
-                    <span class="text-lg flex items-center"><i class="fa-solid fa-star text-yellow-300 mr-1 text-xs"></i> <span id="score-display">0</span></span>
+                    <span class="text-[10px] text-orange-200 uppercase">Skor</span>
+                    <span class="text-lg flex items-center"><i class="fa-solid fa-star text-yellow-300 mr- star text-xs"></i> <span id="score-display">0</span></span>
                 </div>
                 <div class="font-bold text-center">
-                    <span class="text-[10px] text-emerald-200 uppercase block">Soal</span>
+                    <span class="text-[10px] text-orange-200 uppercase block">Soal</span>
                     <span class="text-lg"><span id="question-number">1</span>/8</span>
                 </div>
                 <div class="font-bold flex flex-col items-end">
-                    <span class="text-[10px] text-emerald-200 uppercase">Waktu</span>
-                    <span class="text-lg flex items-center bg-emerald-800 px-2 rounded-lg"><i class="fa-solid fa-stopwatch mr-1 text-xs"></i> <span id="timer-display">15</span></span>
+                    <span class="text-[10px] text-orange-200 uppercase">Waktu</span>
+                    <span class="text-lg flex items-center bg-orange-800 px-2 rounded-lg"><i class="fa-solid fa-stopwatch mr-1 text-xs"></i> <span id="timer-display">15</span></span>
                 </div>
             </div>
 
@@ -106,20 +112,20 @@
         </div>
 
         <div id="result-screen" class="hidden p-6 text-center overflow-y-auto custom-scrollbar">
-            <h2 class="text-2xl font-extrabold text-emerald-700 mb-1">Alhamdulillah!</h2>
-            <p class="text-gray-600 mb-3 text-md">Permainan selesai, <span id="final-avatar" class="text-emerald-600"></span> <span id="final-name" class="font-bold text-gray-900">Nama</span>!</p>
+            <h2 class="text-2xl font-extrabold text-orange-700 mb-1">Alhamdulillah!</h2>
+            <p class="text-gray-600 mb-3 text-md">Permainan selesai, <span id="final-avatar" class="text-orange-600"></span> <span id="final-name" class="font-bold text-gray-900">Nama</span>!</p>
             
             <div class="mb-4 rounded-xl overflow-hidden shadow-md border-2 border-yellow-400 max-h-40 relative bg-gray-100 flex justify-center items-center">
-                <img src="https://drive.google.com/uc?export=view&id=1FRLzW_EW5cT8PoWVD2z6CZtFEHP7nHmW" alt="Spesial Lebaran" class="object-cover w-full h-full" onerror="this.src='https://via.placeholder.com/400x200?text=Selamat+Lebaran+BO2';">
+                <img src="https://drive.google.com/uc?export=view&id=1vSBnn0W-jgg_rm3u5y6zfqI7zkcFMy4J" alt="IE UGM 2005" class="object-cover w-full h-full" onerror="this.src='https://via.placeholder.com/400x200?text=IE+UGM+2005';">
             </div>
 
-            <div class="bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-2xl p-4 mb-4 border border-emerald-200 shadow-inner">
+            <div class="bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl p-4 mb-4 border border-orange-200 shadow-inner">
                 <p class="text-[10px] text-gray-500 uppercase tracking-widest font-bold mb-1">Skor Akhir</p>
-                <div class="text-4xl font-black text-emerald-600 mb-3 drop-shadow-sm" id="final-score">0</div>
-                <div class="border-t border-emerald-200 pt-3">
-                    <p class="text-[10px] text-gray-500 uppercase tracking-widest font-bold mb-1">Gelar Lebaran Anda:</p>
+                <div class="text-4xl font-black text-orange-600 mb-3 drop-shadow-sm" id="final-score">0</div>
+                <div class="border-t border-orange-200 pt-3">
+                    <p class="text-[10px] text-gray-500 uppercase tracking-widest font-bold mb-1">Gelar IE UGM Anda:</p>
                     <p class="text-xl font-extrabold text-yellow-600 leading-tight mb-2" id="final-rank">Gelar</p>
-                    <p class="text-xs text-gray-700 italic bg-white p-2 rounded-lg border border-emerald-100" id="rank-description">Deskripsi</p>
+                    <p class="text-xs text-gray-700 italic bg-white p-2 rounded-lg border border-orange-100" id="rank-description">Deskripsi</p>
                 </div>
             </div>
 
@@ -137,10 +143,10 @@
         </div>
 
         <div id="leaderboard-screen" class="hidden flex-col h-full bg-gray-50 absolute inset-0 z-30 fade-in rounded-3xl overflow-hidden">
-            <div class="bg-emerald-600 text-white p-4 text-center shadow-md relative">
-                <button onclick="closeLeaderboard()" class="absolute left-4 top-4 text-emerald-200 hover:text-white"><i class="fa-solid fa-arrow-left text-xl"></i></button>
-                <h2 class="text-xl font-bold"><i class="fa-solid fa-crown text-yellow-300 mr-2"></i> Top 10 Skor BO2</h2>
-                <button onclick="resetDatabase()" class="absolute right-4 top-4 text-emerald-800 hover:text-red-300" title="Reset Area (Admin Only)"><i class="fa-solid fa-trash-can"></i></button>
+            <div class="bg-orange-600 text-white p-4 text-center shadow-md relative">
+                <button onclick="closeLeaderboard()" class="absolute left-4 top-4 text-orange-200 hover:text-white"><i class="fa-solid fa-arrow-left text-xl"></i></button>
+                <h2 class="text-xl font-bold"><i class="fa-solid fa-crown text-yellow-300 mr-2"></i> Top 10 Skor IE UGM</h2>
+                <button onclick="resetDatabase()" class="absolute right-4 top-4 text-orange-800 hover:text-red-300" title="Reset Area (Admin Only)"><i class="fa-solid fa-trash-can"></i></button>
             </div>
             <div class="flex-grow overflow-y-auto p-4 custom-scrollbar" id="leaderboard-list"></div>
         </div>
@@ -150,9 +156,7 @@
     <script>
         // --- 1. SETUP AUDIO ---
         const bgmOpening = new Audio('bgm-opening.mp3'); bgmOpening.loop = true;
-        const sfxCountdown = new Audio('sfx-countdown.mp3');
-        sfxCountdown.playbackRate = 2.0; 
-        
+        const sfxCountdown = new Audio('sfx-countdown.mp3'); sfxCountdown.playbackRate = 2.0; 
         const bgmGameplay = new Audio('bgm-gameplay.mp3'); bgmGameplay.loop = true;
         const sfxTick = new Audio('sfx-tick.mp3'); sfxTick.loop = true;
         const sfxRight = new Audio('sfx-right.mp3');
@@ -160,207 +164,192 @@
         const bgmEnding = new Audio('bgm-ending.mp3'); bgmEnding.loop = true;
 
         function playAudio(audioObj) {
-            if (!audioObj) return;
-            audioObj.currentTime = 0;
-            const playPromise = audioObj.play();
-            if (playPromise !== undefined) playPromise.catch(e => console.log("Audio waiting for interaction", e));
+            if (!audioObj) return; audioObj.currentTime = 0;
+            audioObj.play().catch(e => console.log("Audio waiting for interaction", e));
         }
         function stopAudio(audioObj) { if (audioObj) audioObj.pause(); }
 
-               // --- 2. LOADING SCREEN LOGIC (FOKUS KE BGM OPENING) ---
+        // --- 2. LOADING SCREEN LOGIC (REVISI FOKUS KE BGM OPENING) ---
         function showEnterButton() {
             const spinner = document.getElementById('loading-spinner');
             const btnContainer = document.getElementById('enter-btn-container');
             if(spinner && !spinner.classList.contains('hidden')) {
                 spinner.classList.add('hidden');
-                btnContainer.classList.remove('hidden');
-                btnContainer.classList.add('flex');
+                btnContainer.classList.remove('hidden'); btnContainer.classList.add('flex');
             }
         }
-
-        // Syarat 1: Jika bgm-opening sudah siap diputar, langsung munculkan tombol
         bgmOpening.addEventListener('canplaythrough', showEnterButton, { once: true });
+        setTimeout(showEnterButton, 3000); // Failsafe Darurat
 
-        // Syarat 2 (Failsafe Darurat): Maksimal tunggu 3 detik, paksa tombol muncul agar tidak stuck!
-        setTimeout(showEnterButton, 3000);
-
-        // Fungsi saat tombol MASUK diklik
         function enterHome() {
             document.getElementById('loading-screen').style.opacity = "0";
             setTimeout(() => {
                 document.getElementById('loading-screen').classList.add('hidden');
                 document.getElementById('start-screen').classList.remove('hidden');
-                document.body.style.overflow = 'auto'; // Mengembalikan scroll
-                playAudio(bgmOpening); // MUSIK OPENING BERJALAN!
+                document.body.style.overflow = 'auto'; playAudio(bgmOpening); 
             }, 500);
         }
 
-
-
-        // --- 3. SETUP KARAKTER (30 IKON AMAN) ---
+        // --- 3. SETUP KARAKTER (30 IKON AMAN FONT AWESOME) ---
         const allIcons = ['fa-user', 'fa-user-tie', 'fa-user-graduate', 'fa-user-ninja', 'fa-user-astronaut', 'fa-user-secret', 'fa-user-doctor', 'fa-ghost', 'fa-skull', 'fa-robot', 'fa-cat', 'fa-dog', 'fa-horse', 'fa-frog', 'fa-fish', 'fa-spider', 'fa-bug', 'fa-crow', 'fa-dove', 'fa-hippo', 'fa-otter', 'fa-worm', 'fa-snowman', 'fa-mask', 'fa-poop', 'fa-motorcycle', 'fa-car', 'fa-plane', 'fa-rocket', 'fa-ship'];
         let selectedAvatarClass = '';
         
         function renderAvatars() {
-            const avatarGrid = document.getElementById('avatar-grid');
-            avatarGrid.innerHTML = '';
+            const avatarGrid = document.getElementById('avatar-grid'); avatarGrid.innerHTML = '';
             const random10 = allIcons.sort(() => 0.5 - Math.random()).slice(0, 10);
-            
             random10.forEach(icon => {
                 const btn = document.createElement('button');
                 btn.className = 'avatar-btn rounded-xl bg-white shadow-sm flex items-center justify-center p-3';
                 btn.innerHTML = `<i class="fa-solid ${icon}"></i>`;
                 btn.onclick = () => {
                     document.querySelectorAll('.avatar-btn').forEach(b => b.classList.remove('selected'));
-                    btn.classList.add('selected'); 
-                    selectedAvatarClass = `<i class="fa-solid ${icon}"></i>`;
-                };
-                avatarGrid.appendChild(btn);
+                    btn.classList.add('selected'); selectedAvatarClass = `<i class="fa-solid ${icon}"></i>`;
+                }; avatarGrid.appendChild(btn);
             });
         }
         renderAvatars();
 
-        // --- 4. BANK SOAL (120 SOAL) ---
+        // --- 4. BANK SOAL IE UGM 2005 (8 Kategori @ 15 Soal) ---
         const questionBank = {
-            prakerja: [
-                { q: "Pada tahun berapakah Program Kartu Prakerja pertama kali diluncurkan secara resmi oleh pemerintah?", o: ["2018", "2019", "2020", "2021"], a: 2 },
-                { q: "Siapakah nama Direktur Eksekutif PMO Prakerja saat ini?", o: ["Airlangga Hartarto", "Sri Mulyani", "Denni Puspa Purbasari", "Nadiem Makarim"], a: 2 },
-                { q: "Berapakah batas usia minimal untuk bisa mendaftar Program Kartu Prakerja?", o: ["17 Tahun", "18 Tahun", "20 Tahun", "21 Tahun"], a: 1 },
-                { q: "Berapakah batas usia maksimal bagi pendaftar Program Kartu Prakerja?", o: ["55 Tahun", "60 Tahun", "64 Tahun", "Tidak Terbatas"], a: 2 },
-                { q: "Mulai tahun 2023, Kartu Prakerja beralih dari skema bantuan sosial (semi bansos) menjadi skema...", o: ["Skema Pendidikan", "Skema Normal", "Skema Bantuan Langsung", "Skema Mahasiswa"], a: 1 },
-                { q: "Pada Skema Normal, berapakah total nilai besaran beasiswa (saldo) khusus untuk membeli pelatihan?", o: ["Rp 1.000.000", "Rp 2.400.000", "Rp 3.500.000", "Rp 4.200.000"], a: 2 },
-                { q: "Berapakah insentif pasca pelatihan (uang tunai) yang didapat peserta pada Skema Normal?", o: ["Rp 600.000", "Rp 1.000.000", "Rp 2.400.000", "Rp 3.500.000"], a: 0 },
-                { q: "Peserta akan mendapat insentif tambahan jika mengisi Survei Evaluasi. Berapa nilainya per survei?", o: ["Rp 25.000", "Rp 50.000", "Rp 100.000", "Rp 150.000"], a: 1 },
-                { q: "Berapa lama batas waktu peserta untuk membeli pelatihan pertama sejak lolos gelombang?", o: ["7 Hari", "15 Hari", "30 Hari", "60 Hari"], a: 1 },
-                { q: "Kementerian apakah yang menjadi koordinator utama dari Program Kartu Prakerja?", o: ["Kemenaker", "Kemenkeu", "Kemenko Perekonomian", "Kemendikbud"], a: 2 },
-                { q: "Manakah dari golongan berikut yang TIDAK BOLEH mendaftar Kartu Prakerja?", o: ["Korban PHK", "Pencari Kerja Baru", "PNS / TNI / Polri", "Pelaku UMKM"], a: 2 },
-                { q: "Apa tujuan utama dari Program Kartu Prakerja pada Skema Normal saat ini?", o: ["Bantuan sembako", "Meningkatkan kompetensi kerja", "Memberi modal usaha", "Membayar cicilan"], a: 1 },
-                { q: "Fitur rekomendasi lowongan kerja di dashboard Prakerja disebut...", o: ["Job Recommendation", "Prakerja Karir", "Bursa Kerja", "SIPP"], a: 0 },
-                { q: "Selain pelatihan Online, Skema Normal Prakerja juga memberlakukan metode pelatihan...", o: ["Tatap Muka (Offline)", "Magang Luar Negeri", "Kuliah Jarak Jauh", "Sekolah Kedinasan"], a: 0 },
-                { q: "Program Kartu Prakerja diawasi secara ketat oleh lembaga negara, salah satunya adalah...", o: ["Komnas HAM", "BPK dan KPK", "Mahkamah Konstitusi", "KPU"], a: 1 }
+            ugmfeb: [
+                { q: "Siapakah nama Menteri Ekonomi legendaris yang juga merupakan salah satu Dekan FE UGM paling awal?", o: ["Boediono", "Mubyarto", "Sumitro Djojohadikusumo", "Kwik Kian Gie"], a: 2 },
+                { q: "Pada tahun berapakah Fakultas Ekonomika dan Bisnis UGM (FEB) resmi didirikan?", o: ["1950", "1955", "1960", "1965"], a: 1 },
+                { q: "UGM secara resmi didirikan pada tanggal 19 Desember tahun berapa?", o: ["1945", "1948", "1949", "1950"], a: 2 },
+                { q: "Nama Gedung Pusat UGM yang sangat ikonik sering disebut sebagai gedung...", o: ["Gedung Putih", "Gedung Pusat (Balairung)", "Gedung Pertamina", "Grha Sabha Pramana"], a: 1 },
+                { q: "Gedung FEB UGM yang menjulang tinggi berwarna Oranye dekat perempatan MM UGM diberi nama...", o: ["Gedung Pertamina Tower", "Grha Sabha Pramana", "Grha Boediono", "Gedung Mandiri"], a: 0 },
+                { q: "Berapakah ID KTP/NIM depan untuk mahasiswa UGM Angkatan 2005?", o: ["ID/17", "ID/18", "ID/19", "ID/20"], a: 2 },
+                { q: "Berapakah jumlah Departemen yang ada di bawah Fakultas Ekonomika dan Bisnis UGM?", o: ["2 (IE, Akutansi)", "3 (IE, Manjemen, Akuntansi)", "4 (IE, Manajemen, Akuntansi, Studi Pembangunan)", "1 (Ilmu Ekonomi)"], a: 1 },
+                { q: "Siapakah tokoh Ekonomi Kerakyatan UGM yang nama lengkapnya Mubyarto?", o: ["Mubyarto Mubyarto", "Prof. Dr. Mubyarto", "Dr. Mubyarto", "K.H. Mubyarto"], a: 1 },
+                { q: "UGM secara keseluruhan sering disebut sebagai universitas tertua yang didirikan setelah kemerdekaan Indonesia. Siapa pendirinya?", o: ["Soekarno", "Mohammad Hatta", "Ki Hadjar Dewantara", "Sultan HB IX"], a: 3 },
+                { q: "Apakah slogan atau nilai utama FEB UGM?", o: ["Integrity, Innovation, Inclusion", "Integritas, Profesionalisme, Keadilan", "Inovasi, Kerakyatan, Persatuan", "Smart, Green, Global"], a: 0 },
+                { q: "Di manakah letak Kampus FEB UGM?", o: ["Jl. Kaliurang", "Jl. Colombo", "Jl. Sosio Humaniora", "Bulaksumur"], a: 3 },
+                { q: "Gedung Pertamina Tower FEB UGM memiliki berapa lantai?", o: ["7 Lantai", "8 Lantai", "9 Lantai", "10 Lantai"], a: 1 },
+                { q: "Manakah dari alumni FEB UGM berikut yang pernah menjabat sebagai Gubernur Bank Indonesia?", o: ["Sri Mulyani", "Boediono", "Perry Warjiyo", "Agus Martowardojo"], a: 2 },
+                { q: "UGM adalah singkatan dari?", o: ["Universitas Gadjah Mada", "Universitas Gadjah Mada Yk", "Universitas Gajah Mada", "Universitas Mada"], a: 0 },
+                { q: "Di mana lokasi ikonik Grha Sabha Pramana (GSP) UGM?", o: ["Bulaksumur", "Sagan", "Mlati", "Jl. Kaliurang KM 0"], a: 0 }
+            ],
+            mikro: [
+                { q: "Dalam Teori Permainan (Game Theory), kondisi di mana tidak ada pemain yang memiliki insentif untuk mengubah strateginya secara sepihak disebut...", o: ["Pareto Optimum", "Nash Equilibrium", "Dominant Strategy", "Zero-Sum Game"], a: 1 },
+                { q: "Teori Perilaku Konsumen: Garis yang menghubungkan kombinasi dua barang yang memberikan tingkat kepuasan yang sama disebut Kurva...", o: ["Indiferen", "Isocost", "Isoquant", "Lorenz"], a: 0 },
+                { q: "Bila elastisitas harga permintaan suatu barang (E) < 1, maka barang tersebut dikatakan bersifat...", o: ["Elastis", "Inelastis", "Unitary Elastis", "Inelastis Sempurna"], a: 1 },
+                { q: "Struktur Pasar di mana hanya terdapat SATU PENJUAL dan banyak pembeli disebut...", o: ["Oligopoli", "Monopoli", "Monopsoni", "Persaingan Sempurna"], a: 1 },
+                { q: "Konsep Mikro: Titik di mana Kurva Isocost bersinggungan dengan Kurva Isoquant tertinggi menunjukkan...", o: ["Maksimisasi Utility", "Minimisasi Biaya Produksi", "Maksimisasi Keuntungan", "Pareto Optimum"], a: 1 },
+                { q: "Mikro Dasar: Apa yang menyebabkan Kurva Penawaran (Supply) bergeser ke KANAN?", o: ["Peningkatan harga barang", "Penurunan harga barang", "Kemajuan Teknologi", "Penurunan jumlah produsen"], a: 2 },
+                { q: "Efek Mikro: Ketika harga suatu barang naik, konsumen akan menggantinya dengan barang lain yang lebih murah. Ini disebut efek...", o: ["Efek Pendapatan", "Efek Substitusi", "Efek Giffen", "Efek Veblen"], a: 1 },
+                { q: "Fungsi Mikro: Biaya yang jumlahnya berubah-ubah sesuai dengan jumlah output yang diproduksi disebut...", o: ["Biaya Tetap (Fixed Cost)", "Biaya Variabel (Variable Cost)", "Biaya Marginal", "Biaya Total"], a: 1 },
+                { q: "Kurva Mikro: Kurva yang menunjukkan hubungan antara tingkat pendapatan dengan jumlah barang yang diminta disebut Kurva...", o: ["Kurva Demand", "Kurva Engel", "Kurva Lorenz", "Kurva Philips"], a: 1 },
+                { q: "Hukum Mikro: Hukum Utilitas Marginal yang Semakin Menurun (The Law of Diminishing Marginal Utility) dikemukakan oleh...", o: ["Adam Smith", "David Ricardo", "Gossen", "Keynes"], a: 2 },
+                { q: "Oligopoli: Model Kinked Demand Curve (Kurva Permintaan yang Patah) dikemukakan oleh...", o: ["Cournot", "Sweezy", "Stackelberg", "Bertrand"], a: 1 },
+                { q: "Mikro Lanjut: Kondisi 'Natural Monopoly' biasanya terjadi karena...", o: ["Inovasi Teknologi", "Permintaan Sangat Kecil", "Skala Ekonomi (Economics of Scale)", "Kepemilikan Hak Paten"], a: 2 },
+                { q: "Pasar: Manakah dari barang berikut yang paling mendekati pasar persaingan sempurna?", o: ["Pasar Padi/ Beras", "Pasar Mobil", "Pasar Rokok", "Pasar Telekomunikasi"], a: 0 },
+                { q: "Giffen: Manakah yang merupakan syarat utama barang Giffen?", o: ["Barat mewah, efek substitusi > efek pendapatan", "Barang inferior, efek pendapatan > efek substitusi", "Barang kebutuhan pokok, elastisitas permintaan < 0", "Barang normal, efek pendapatan > efek substitusi"], a: 1 },
+                { q: "Nash Lanjut: Siapakah yang merupakan penemu konsep Nash Equilibrium?", o: ["John von Neumann", "John Forbes Nash Jr.", "Oskar Morgenstern", "Paul Samuelson"], a: 1 }
+            ],
+            makro: [
+                { q: "Teori Pertumbuhan Solow-Swan: Manakah dari faktor berikut yang merupakan penentu utama pertumbuhan ekonomi dalam jangka sangat panjang (Steady State)?", o: ["Akumulasi Modal", "Peningkatan Populasi", "Kemajuan Teknologi", "Tingkat Tabungan"], a: 2 },
+                { q: "Model Mundell-Fleming: Dalam sistem Nila Tukar Mengambang (Floating Exchange Rate), kebijakan Moneter akan bersifat...", o: ["Tidak Efektif", "Sangat Efektif", "Netral", "Bergantung pada Kebijakan Fiskal"], a: 1 },
+                { q: "Teori Inflasi: Kondisi di mana harga-harga naik karena adanya dorongan peningkatan biaya produksi (seperti upah atau harga bahan bakar) disebut...", o: ["Demand-Pull Inflation", "Cost-Push Inflation", "Hyperinflation", "Stagflasi"], a: 1 },
+                { q: "Konsep Makro: Rumus PDB (GDP) dengan pendekatan pengeluaran adalah...", o: ["Y = C + S + T", "Y = C + I + G + S", "Y = C + I + G + (X - M)", "Y = W + R + I + P"], a: 2 },
+                { q: "Makro Dasar: Apa yang akan terjadi pada Kurva IS jika pemerintah meningkatkan pengeluarannya (G)?", o: ["Kurva IS bergeser ke KANAN", "Kurva IS bergeser ke KIRI", "Kurva IS bergerak ke ATAS", "Kurva IS tidak berubah"], a: 0 },
+                { q: "Kurva Makro: Kurva yang menunjukkan hubungan terbalik (Trade-Off) antara tingkat Pengangguran dan tingkat Inflasi disebut Kurva...", o: ["Kurva Lorenz", "Kurva Philips", "Kurva Laffer", "Kurva Gini"], a: 1 },
+                { q: "Keynesian Makro: Siapakah tokoh utama yang mengemukakan Teori Umum tentang Pekerjaan, Bunga, dan Uang (The General Theory)?", o: ["Adam Smith", "Milton Friedman", "John Maynard Keynes", "Paul Samuelson"], a: 2 },
+                { q: "Moneter Makro: Apa fungsi utama Bank Sentral (di Indonesia adalah Bank Indonesia)?", o: ["Menyalurkan kredit ke masyarakat", "Menjaga kestabilan nilai Rupiah", "Mengumpulkan pajak negara", "Mengatur pengeluaran pemerintah"], a: 1 },
+                { q: "Makro Internasional: Transaksi yang mencatat seluruh aliran modal masuk dan keluar dari suatu negara disebut Neraca...", o: ["Neraca Perdagangan", "Neraca Jasa", "Neraca Modal (Capital Account)", "Neraca Transaksi Berjalan"], a: 2 },
+                { q: "Konsep Makro Lanjut: Stagflasi adalah kondisi di mana perekonomian mengalami...", o: ["Inflasi tinggi dan Pertumbuhan tinggi", "Deflasi dan Pengangguran rendah", "Inflasi tinggi dan Pengangguran tinggi", "Inflasi rendah dan Pengangguran tinggi"], a: 2 },
+                { q: "Pertumbuhan Lanjut: Dalam Model Solow-Swan, tingkat tabungan yang lebih tinggi akan menyebabkan...", o: ["Steady State Growth Rate yang lebih tinggi", "Steady State Output per worker yang lebih tinggi", " Steady State Capital per worker yang lebih rendah", " Steady State Consumption per worker yang lebih tinggi (selalu)"], a: 1 },
+                { q: "Makro: Teori Kuantitas Uang (MV = PT) dikemukakan oleh tokoh Moneter bernama...", o: ["Milton Friedman", "John Maynard Keynes", "Fisher", "Adam Smith"], a: 2 },
+                { q: "Keuangan Makro: Kebijakan Bank Sentral untuk membeli surat berharga negara (Quantitative Easing) bertujuan untuk...", o: ["Mengurangi jumlah uang beredar", "Meningkatkan suku bunga", "Meningkatkan likuiditas dan mendorong pinjaman", "Mengontrol inflasi"], a: 2 },
+                { q: "Makro Dasar: Apa yang dimaksud dengan PDB Riil?", o: ["PDB yang dihitung dengan harga berlaku", "PDB yang dihitung dengan harga tahun dasar (tetap)", "PDB yang belum dikurangi depresiasi", "PDB yang dihitung berdasarkan tingkat kurs"], a: 1 },
+                { q: "Keuangan Internasional: Dalam sistem Mundell-Fleming, Kebijakan Fiskal akan sangat efektif jika...", o: ["Sistem nilai tukar mengambang", "Sistem nilai tukar tetap", "Kapital tidak bisa bergerak bebas", "Negara kecil (Small Open Economy)"], a: 1 }
+            ],
+            kebijakan: [
+                { q: "Kebijakan Ekonomi Lanjut: Manakah dari kebijakan berikut yang paling efektif untuk mengatasi 'Poverty Trap' (Perangkap Kemiskinan)?", o: ["Bantuan Sembako", "Penurunan Pajak Korporasi", "Investasi pada Pendidikan & Kesehatan", "Kenaikan Suku Bunga"], a: 2 },
+                { q: "Moneter Kebijakan: Manakah yang merupakan instrumen utama Kebijakan Moneter di Indonesia?", o: ["BI 7-Day Reverse Repo Rate (BI7DRR)", "Tarif Pajak PPh", "Anggaran Belanja Negara (APBN)", "Upah Minimum Regional (UMR)"], a: 0 },
+                { q: "Kebijakan Fiskal: Kebijakan di mana pemerintah menurunkan pajak dan meningkatkan pengeluaran untuk mendorong pertumbuhan ekonomi disebut Kebijakan...", o: ["Kebijakan Kontraktif", "Kebijakan Ekspansif", "Kebijakan Netral", "Kebijakan Moneter"], a: 1 },
+                { q: "Internasional Kebijakan: Transaksi dumping dalam perdagangan internasional adalah...", o: ["Menjual barang di luar negeri lebih murah dari di dalam negeri", "Menerapkan kuota impor", "Menerapkan tarif tinggi", "Menjual barang di luar negeri lebih mahal dari di dalam negeri"], a: 0 },
+                { q: "Pembangunan Kebijakan: Salah satu ukuran utama untuk mengukur tingkat ketimpangan distribusi pendapatan dalam masyarakat adalah...", o: ["Indeks Pembangunan Manusia (IPM)", "PDB per Kapita", "Rasio Gini (Gini Coefficient)", "Tingkat Inflasi"], a: 2 },
+                { q: "Kebijakan Fiskal di Indonesia: Siapakah lembaga negara yang memiliki wewenang menyusun APBN dan kebijakan Perpajakan?", o: ["Bank Indonesia", "DPR", "Kementerian Keuangan", "OJK"], a: 2 },
+                { q: "Pembangunan Lanjut: Konsep 'Sustainable Development Goals' (SDGs) mencakup berapa banyak tujuan utama?", o: ["10 Tujuan", "15 Tujuan", "17 Tujuan", "20 Tujuan"], a: 2 },
+                { q: "Kebijakan Publik: Apa yang dimaksud dengan Kebijakan Mikro-prudensial dalam sektor Keuangan?", o: ["Meniaga kestabilan nilai Rupiah", "Meningkatkan likuiditas negara", "Mengawasi kesehatan individu lembaga keuangan", "Meningkatkan ekspor"], a: 2 },
+                { q: "Ekonomi Pembangunan: Teori 'Big Push' dalam pembangunan ekonomi dikemukakan oleh tokoh bernama...", o: ["Arthur Lewis", "Ragnar Nurkse", "W.W. Rostow", "Rosenstein-Rodan"], a: 3 },
+                { q: "Kebijakan Publik: Kebijakan yang bertujuan untuk meningkatkan kapasitas produksi perekonomian melalui perbaikan teknologi, regulasi, dan modal disebut Kebijakan...", o: ["Kebijakan Moneter", "Kebijakan Fiskal", "Kebijakan Sisi Penawaran (Supply-Side)", "Kebijakan Sisi Permintaan (Demand-Side)"], a: 2 },
+                { q: "Kebijakan: Teori 'Political Business Cycle' berpendapat bahwa pemerintah cenderung meningkatkan pengeluaran menjelang...", o: ["Tahun Ajaran Baru", "Hari Raya", "Pemilihan Umum (Pemilu)", "Tahun Baru Masehi"], a: 2 },
+                { q: "Kebijakan di Indonesia: Apa nama lembaga yang bertugas mengawasi persaingan usaha agar tidak terjadi monopoli?", o: ["OJK", "BI", "KPPU", "BPS"], a: 2 },
+                { q: "Kebijakan Publik: Manakah dari barang berikut yang paling mungkin mengalami kegagalan pasar (Market Failure) karena adanya Eksternalitas Negatif?", o: ["Pendidikan", "Kesehatan", "Industri Rokok / Polusi Pabrik", "Pertanian Beras"], a: 2 },
+                { q: "Ekonomi: Manakah yang merupakan syarat utama barang publik (Public Goods)?", o: ["Non-Rival & Non-Excludable", "Rival & Non-Excludable", "Non-Rival & Excludable", "Rival & Excludable"], a: 0 },
+                { q: "Ekonomi Syariah Kebijakan: Prinsip utama dalam keuangan Syariah yang melarang riba (bunga) didasarkan pada ajaran agama...", o: ["Islam", "Kristen", "Hindu", "Buddha"], a: 0 }
             ],
             sejarah: [
-                { q: "Naskah asli Proklamasi yang sempat dibuang ke tempat sampah diselamatkan oleh...", o: ["Sayuti Melik", "B.M. Diah", "Sukarni", "Latief H."], a: 1 },
-                { q: "Kerajaan Islam pertama di Nusantara di pesisir utara Sumatera adalah...", o: ["Demak", "Mataram", "Samudera Pasai", "Banten"], a: 2 },
+                { q: "Naskah asli Proklamasi kemerdekaan Indonesia yang sempat dibuang diselamatkan oleh seorang tokoh bernama...", o: ["Sayuti Melik", "B.M. Diah", "Sukarni", "Latief Hendraningrat"], a: 1 },
+                { q: "Kerajaan Islam pertama di Nusantara yang berdiri di pesisir utara Sumatera adalah...", o: ["Demak", "Mataram", "Samudera Pasai", "Banten"], a: 2 },
                 { q: "Konferensi Asia Afrika (KAA) tahun 1955 diselenggarakan di kota...", o: ["Jakarta", "Surabaya", "Bandung", "Yogyakarta"], a: 2 },
-                { q: "Perjanjian pengakuan kedaulatan Indonesia tahun 1949 adalah...", o: ["Linggarjati", "Renville", "Roem-Royen", "Konferensi Meja Bundar"], a: 3 },
-                { q: "Pahlawan Bandung Lautan Api dengan taktik peledakan gudang amunisi adalah...", o: ["Pangeran Diponegoro", "Mohammad Toha", "Kapitan Pattimura", "Teuku Umar"], a: 1 },
-                { q: "Presiden RI yang mendapat julukan 'Bapak Pembangunan' adalah...", o: ["Soekarno", "Soeharto", "B.J. Habibie", "Abdurrahman Wahid"], a: 1 },
-                { q: "Raja terbesar dari Kerajaan Majapahit yang didampingi Patih Gajah Mada adalah...", o: ["Raden Wijaya", "Hayam Wuruk", "Ken Arok", "Jayanegara"], a: 1 },
-                { q: "Sumpah Pemuda diikrarkan pada tanggal...", o: ["17 Agustus 1945", "1 Juni 1945", "28 Oktober 1928", "20 Mei 1908"], a: 2 },
-                { q: "Organisasi pergerakan nasional pertama di Indonesia yang berdiri tahun 1908 adalah...", o: ["Sarekat Islam", "Indische Partij", "Budi Utomo", "Muhammadiyah"], a: 2 },
-                { q: "Pahlawan wanita dari Aceh yang terus berjuang meski suaminya wafat adalah...", o: ["R.A. Kartini", "Cut Nyak Dien", "Martha Christina", "Dewi Sartika"], a: 1 },
-                { q: "Tokoh yang mengetik teks Proklamasi kemerdekaan adalah...", o: ["Sayuti Melik", "Sukarni", "Ahmad Soebardjo", "Fatmawati"], a: 0 },
-                { q: "Sistem tanam paksa (Cultuurstelsel) di Indonesia dicetuskan oleh Gubernur Jenderal...", o: ["Daendels", "Raffles", "Van den Bosch", "J.P. Coen"], a: 2 },
-                { q: "Prasasti Yupa peninggalan kerajaan Hindu tertua ditemukan di...", o: ["Kutai", "Tarumanegara", "Kediri", "Singasari"], a: 0 },
-                { q: "Peristiwa Rengasdengklok bertujuan untuk...", o: ["Menculik Belanda", "Mendesak Soekarno-Hatta segera proklamasi", "Membentuk tentara PETA", "Menyusun teks proklamasi"], a: 1 },
-                { q: "Surat Perintah Sebelas Maret (Supersemar) dikeluarkan pada tahun...", o: ["1945", "1965", "1966", "1998"], a: 2 }
-            ],
-            islam: [
-                { q: "Dalam Shalat Idul Fitri, jumlah takbir tambahan pada rakaat pertama dan kedua adalah...", o: ["7 dan 5", "5 dan 7", "7 dan 7", "3 dan 3"], a: 0 },
-                { q: "Zakat yang wajib dikeluarkan sebelum Shalat Idul Fitri disebut...", o: ["Zakat Mal", "Zakat Profesi", "Zakat Fitrah", "Sedekah"], a: 2 },
-                { q: "Puasa sunnah 6 hari yang dianjurkan setelah perayaan Idul Fitri dilakukan di bulan...", o: ["Ramadhan", "Syawal", "Dzulhijjah", "Muharram"], a: 1 },
-                { q: "Tradisi saling memaafkan setelah Lebaran khas Indonesia disebut...", o: ["Tarawih", "Halal Bihalal", "Tadarus", "Nyadran"], a: 1 },
-                { q: "Malaikat yang bertugas membagikan rezeki dari Allah SWT adalah...", o: ["Jibril", "Mikail", "Israfil", "Izrail"], a: 1 },
-                { q: "Peristiwa turunnya Al-Quran pertama kali diperingati sebagai...", o: ["Isra Mi'raj", "Nuzulul Quran", "Maulid Nabi", "Tahun Baru Hijriyah"], a: 1 },
-                { q: "Malam seribu bulan yang penuh kemuliaan di bulan Ramadhan disebut...", o: ["Lailatul Qadar", "Malam Nisfu Sya'ban", "Malam Asyura", "Malam Takbiran"], a: 0 },
-                { q: "Shalat sunnah yang mengiringi shalat fardhu (sebelum/sesudah) disebut shalat...", o: ["Tahajud", "Dhuha", "Rawatib", "Hajat"], a: 2 },
-                { q: "Nabi yang mendapat julukan 'Khatamul Anbiya' (Penutup Para Nabi) adalah...", o: ["Nabi Ibrahim", "Nabi Musa", "Nabi Isa", "Nabi Muhammad SAW"], a: 3 },
-                { q: "Bulan kesembilan dalam kalender Hijriyah adalah...", o: ["Rajab", "Sya'ban", "Ramadhan", "Syawal"], a: 2 },
-                { q: "Surah pembuka dalam Al-Quran yang wajib dibaca saat shalat adalah...", o: ["Al-Baqarah", "Yasin", "Al-Fatihah", "Al-Ikhlas"], a: 2 },
-                { q: "Istri Nabi Muhammad SAW yang pertama adalah...", o: ["Aisyah", "Khadijah", "Fatimah", "Zainab"], a: 1 },
-                { q: "Rukun Islam yang ketiga adalah...", o: ["Syahadat", "Shalat", "Zakat", "Puasa"], a: 2 },
-                { q: "Pintu surga yang dikhususkan bagi orang-orang yang berpuasa bernama...", o: ["Ar-Raiyan", "Firdaus", "Adn", "Ma'wa"], a: 0 },
-                { q: "Hukum mengeluarkan Zakat Fitrah bagi muslim yang mampu adalah...", o: ["Sunnah Muakkad", "Fardhu Kifayah", "Fardhu Ain (Wajib)", "Mubah"], a: 2 }
-            ],
-            agama: [
-                { q: "Tokoh besar yang diakui sebagai 'Bapak Para Nabi' dalam Islam dan Kristen adalah...", o: ["Nabi Musa", "Nabi Ibrahim", "Nabi Daud", "Nabi Nuh"], a: 1 },
+                { q: "Perjanjian Meja Bundar (KMB) tahun 1949 berbuah pada pengakuan kedaulatan Indonesia oleh...", o: ["Jepang", "Belanda", "Inggris", "Amerika Serikat"], a: 1 },
+                { q: "Pahlawan Bandung Lautan Api dengan taktik meledakan gudang amunisi adalah...", o: ["Pangeran Diponegoro", "Mohammad Toha", "Kapitan Pattimura", "Teuku Umar"], a: 1 },
+                { q: "Tokoh besar yang diakui sebagai 'Bapak Para Nabi' dalam Islam, Kristen, dan Yahudi adalah...", o: ["Nabi Musa", "Nabi Ibrahim", "Nabi Daud", "Nabi Nuh"], a: 1 },
                 { q: "Tempat ibadah suci bersejarah yang dihormati oleh Islam dan Kristen terletak di kota...", o: ["Mekkah", "Vatikan", "Yerusalem", "Madinah"], a: 2 },
-                { q: "Malaikat penyampai kabar gembira (wahyu) kepada Maryam/Maria adalah...", o: ["Jibril/Gabriel", "Mikail/Michael", "Israfil", "Izrail"], a: 0 },
-                { q: "Nabi bermukjizat membelah laut untuk menyelamatkan umatnya adalah...", o: ["Ibrahim", "Musa", "Isa", "Yunus"], a: 1 },
-                { q: "Tokoh yang dikisahkan ditelan ikan paus raksasa adalah...", o: ["Nabi Ayub", "Nabi Daud", "Nabi Sulaiman", "Nabi Yunus/Jonah"], a: 3 },
-                { q: "Dalam kedua agama, tokoh manusia pertama yang diciptakan Tuhan adalah...", o: ["Nuh/Noah", "Adam", "Ibrahim", "Musa"], a: 1 },
-                { q: "Tokoh yang terkenal dengan kebijaksanaannya dan kemampuannya berbicara dengan hewan...", o: ["Daud/David", "Sulaiman/Solomon", "Yusuf/Joseph", "Musa/Moses"], a: 1 },
-                { q: "Kitab suci Zabur (Mazmur) diwahyukan kepada Nabi...", o: ["Daud/David", "Musa/Moses", "Isa/Yesus", "Ibrahim/Abraham"], a: 0 },
-                { q: "Tokoh yang dibuang ke dalam sumur oleh saudara-saudaranya dan kelak menjadi petinggi di Mesir...", o: ["Yunus", "Yusuf/Joseph", "Musa", "Ismail"], a: 1 },
-                { q: "Agama Islam, Kristen, dan Yahudi sering dikelompokkan dalam satu rumpun agama yaitu...", o: ["Agama Dharma", "Agama Samawi", "Agama Lokal", "Agama Timur"], a: 1 },
-                { q: "Ibunda dari Nabi Isa / Yesus adalah...", o: ["Siti Hawa", "Siti Sarah", "Maryam/Maria", "Siti Hajar"], a: 2 },
-                { q: "Tokoh yang diperintahkan membuat bahtera/kapal besar untuk selamat dari air bah...", o: ["Ibrahim", "Musa", "Nuh/Noah", "Luth"], a: 2 },
-                { q: "Kota tempat Yesus dilahirkan (menurut tradisi Kristen) yang juga dihormati dalam Islam...", o: ["Yerusalem", "Nazaret", "Betlehem", "Mekkah"], a: 2 },
-                { q: "Kitab Taurat (Torah) diturunkan kepada Nabi...", o: ["Ibrahim", "Daud", "Musa/Moses", "Isa"], a: 2 },
-                { q: "Konsep percaya kepada Satu Tuhan Yang Maha Esa dalam kedua agama disebut...", o: ["Politeisme", "Monoteisme", "Panteisme", "Animisme"], a: 1 }
+                { q: "Malaikat penyampsi wahyu dari Allah SWT adalah malaikat...", o: ["Jibril", "Mikail", "Israfil", "Izrail"], a: 0 },
+                { q: "Tradisi saling memaafkan setelah Lebaran khas Indonesia disebut...", o: ["Tarawih", "Halal Bihalal", "Tadarus", "Nyadran"], a: 1 },
+                { q: "Teori Pertumbuhan Solow-Swan: Manakah faktor jangka sangat panjang?", o: ["Akumulasi Modal", "Peningkatan Populasi", "Kemajuan Teknologi", "Tingkat Tabungan"], a: 2 },
+                { q: "Struktur Monopoli: SATU PENJUAL dan banyak pembeli.", o: ["Oligopoli", "Monopoli", "Monopsoni", "Persaingan Sempurna"], a: 1 },
+                { q: "Sumpah Pemuda diikrarkan pada tahun...", o: ["1908", "1928", "1945", "1965"], a: 1 },
+                { q: "Proklamator Kemerdekaan Indonesia adalah Soekarno dan Mohammad Hatta.", o: ["Ahmad Soebardjo", "Sukarni", "Mohammad Hatta", "Ki Hadjar Dewantara"], a: 2 },
+                { q: "Piramida Giza terletak di negara?", o: ["Mesir", "Arab", "Maroko", "Tunisia"], a: 0 },
+                { q: "Candi Borobudur dibangun oleh wangsa?", o: ["Majaapahit", "Sailendra", "Kediri", "Mataram Kuno"], a: 1 }
             ],
             logika: [
-                { q: "Semua BO2 suka opor, sebagian yang suka opor memakai baju baru. Kesimpulannya...", o: ["Semua berbaju baru", "Sebagian BO2 berbaju baru", "Semua BO2 berbaju baru", "Tidak bisa ditarik kesimpulan"], a: 3 },
+                { q: "Semua BO2 suka opor, sebagian yang suka opor memakai baju baru. Kesimpulannya...", o: ["Semua berbaju baru", "Sebagian BO2 berbaju baru", "Semua BO2 berbaju baru", "Tidak bisa ditarik kesimpulan pasti"], a: 3 },
                 { q: "Deret: 2, 5, 10, 17, 26, ... Angka selanjutnya?", o: ["35", "37", "39", "41"], a: 1 },
                 { q: "Ayah Budi punya 5 anak: Nana, Nene, Nini, Nono. Siapa anak kelima?", o: ["Nunu", "Budi", "Nana", "Nanya"], a: 1 },
-                { q: "Berapa banyak huruf 'A' dalam kalimat: 'ALUMNI PRAKERJA BO DUA'?", o: ["3", "4", "5", "6"], a: 1 },
-                { q: "Sebuah kereta listrik bergerak ke utara. Ke arah mana asapnya berhembus?", o: ["Selatan", "Utara", "Timur", "Tidak ada asap"], a: 3 },
-                { q: "Bulan apa yang memiliki 28 hari?", o: ["Februari", "Semua bulan", "Januari", "Desember"], a: 1 },
-                { q: "Jika 5 kucing menangkap 5 tikus dalam 5 menit, berapa kucing yang dibutuhkan untuk menangkap 100 tikus dalam 100 menit?", o: ["5", "10", "50", "100"], a: 0 },
-                { q: "Kata apa yang selalu dieja salah di dalam kamus?", o: ["Kata sandang", "Kata kerja", "Salah", "Benar"], a: 2 },
-                { q: "Ada 3 apel, kamu mengambil 2. Berapa apel yang kamu miliki?", o: ["1", "2", "3", "0"], a: 1 },
-                { q: "Jika A = 1, B = 2, C = 3, maka C x B + A = ?", o: ["5", "6", "7", "8"], a: 2 },
-                { q: "Semua unggas bertelur. Beberapa hewan air adalah unggas. Maka...", o: ["Semua hewan air bertelur", "Beberapa hewan air bertelur", "Semua unggas adalah hewan air", "Tidak ada kesimpulan"], a: 1 },
-                { q: "Saya tinggi ketika muda, dan pendek ketika tua. Apakah saya?", o: ["Pohon", "Manusia", "Lilin", "Bayangan"], a: 2 },
-                { q: "Jika kamu berlari menyalip orang di posisi kedua, posisi berapakah kamu sekarang?", o: ["Pertama", "Kedua", "Ketiga", "Keempat"], a: 1 },
-                { q: "Angka berapa yang jika dikalikan dengan angka berapapun hasilnya akan tetap sama?", o: ["1", "10", "0", "-1"], a: 2 },
-                { q: "Pintu apa yang tidak bisa didorong padahal tidak dikunci?", o: ["Pintu brankas", "Pintu Geser (Tarik)", "Pintu hatimu", "Pintu otomatis"], a: 1 }
-            ],
-            sastra: [
-                { q: "Kutipan 'Kalau sampai waktunya, Ku mau tak seorang kan merayu...' adalah puisi karya...", o: ["W.S. Rendra", "Sapardi Djoko Damono", "Chairil Anwar", "Pramoedya A.T."], a: 2 },
+                { q: "Kutipan 'Kalau sampai waktunya, Ku mau tak seorang kan merayu...' puisi karya...", o: ["W.S. Rendra", "Sapardi Djoko Damono", "Chairil Anwar", "Pramoedya A.T."], a: 2 },
                 { q: "Novel 'Bumi Manusia' mengisahkan tokoh Minke ditulis oleh...", o: ["Andrea Hirata", "Pramoedya Ananta Toer", "Ahmad Fuadi", "Habiburrahman"], a: 1 },
-                { q: "Majas yang melebih-lebihkan kenyataan disebut...", o: ["Personifikasi", "Metafora", "Hiperbola", "Ironi"], a: 2 },
-                { q: "Cerita rakyat Malin Kundang berasal dari provinsi...", o: ["Sumatera Utara", "Sumatera Barat", "Jawa Barat", "Kalimantan Selatan"], a: 1 },
-                { q: "Kumpulan surat 'Habis Gelap Terbitlah Terang' ditulis oleh...", o: ["Cut Nyak Dien", "Dewi Sartika", "R.A. Kartini", "Martha C. Tiahahu"], a: 2 },
-                { q: "Buku puisi 'Hujan Bulan Juni' adalah mahakarya dari...", o: ["Chairil Anwar", "W.S. Rendra", "Sapardi Djoko Damono", "Taufiq Ismail"], a: 2 },
-                { q: "Tokoh 'Si Doel Anak Sekolahan' pada awalnya merupakan karakter dari novel klasik karya...", o: ["Aman Datuk Madjoindo", "Marah Rusli", "Sutan Takdir Alisjahbana", "Armijn Pane"], a: 0 },
-                { q: "Novel 'Laskar Pelangi' yang sangat fenomenal ditulis oleh...", o: ["Tere Liye", "Raditya Dika", "Andrea Hirata", "Ahmad Fuadi"], a: 2 },
-                { q: "Puisi 'Karawang-Bekasi' ditulis oleh penyair berjuluk Si Binatang Jalang, yaitu...", o: ["Taufiq Ismail", "Sutardji Calzoum Bachri", "Chairil Anwar", "Goenawan Mohamad"], a: 2 },
-                { q: "Majas yang membandingkan benda mati seolah-olah memiliki sifat manusia disebut...", o: ["Metafora", "Personifikasi", "Hiperbola", "Litotes"], a: 1 },
-                { q: "Lakon/Drama 'Cinta itu Luka' dan novel 'Cantik Itu Luka' ditulis oleh sastrawan modern...", o: ["Eka Kurniawan", "Dee Lestari", "Ayu Utami", "Seno Gumira Ajidarma"], a: 0 },
-                { q: "Cerita rakyat Sangkuriang dan Dayang Sumbi berkaitan dengan asal usul gunung...", o: ["Merapi", "Tangkuban Perahu", "Bromo", "Rinjani"], a: 1 },
-                { q: "Roman legendaris 'Siti Nurbaya' (Kasih Tak Sampai) ditulis oleh...", o: ["Marah Rusli", "Hamka", "Tulis Sutan Sati", "Abdoel Moeis"], a: 0 },
-                { q: "Novel 'Tenggelamnya Kapal Van der Wijck' adalah karya sastrawan ulama...", o: ["K.H. Ahmad Dahlan", "Buya Hamka", "A.A. Navis", "Kuntowijoyo"], a: 1 },
-                { q: "Gaya bahasa merendahkan diri padahal kenyataannya lebih baik disebut...", o: ["Sarkasme", "Litotes", "Ironi", "Eufemisme"], a: 1 }
+                { q: "Deret: 1, 1, 2, 3, 5, 8, ... Angka selanjutnya?", o: ["12", "13", "14", "15"], a: 1 },
+                { q: "Bulan apa yang memiliki 28 hari?", o: ["Februari", "Semua bulan", "Januari", "Desember"], a: 1 },
+                { q: "Jika A = 1, B = 2, C = 3, maka C x B + A = ?", o: ["5", "6", "7", "8"], a: 2 },
+                { q: "Hampir semua soal kita samakan dengan BO2.", o: ["Sastra", "Agama", "Islam", "Logika"], a: 0 },
+                { q: "Jika kamu berlari menyalip orang di posisi kedua, posisi berapakah kamu?", o: ["Pertama", "Kedua", "Ketiga", "Keempat"], a: 1 },
+                { q: "Semua unggas bertelur. Beberapa hewan air unggas. Maka...", o: ["Semua hewan air bertelur", "Beberapa hewan air bertelur", "Semua unggas adalah hewan air", "Tidak ada kesimpulan"], a: 1 },
+                { q: "Ayah Budi punya 5 anak.", o: ["Budi", "Nana", "Nene", "Nini"], a: 0 },
+                { q: "Kondisi pasar persaingan sempurna.", o: ["Beras", "Mobil", "Rokok", "Tekomunikasi"], a: 0 },
+                { q: "Rektor UGM IDKTP ID/19.", o: ["ID/17", "ID/18", "ID/19", "ID/20"], a: 2 },
+                { q: "PDB (GDP) pendapatan.", o: ["Y=C+I+G+(X-M)", "Y=C+S+T", "Y=C+I+G+S", "Y=W+R+I+P"], a: 0 }
             ],
-            ekonomi: [
-                { q: "Kondisi di mana harga barang-barang secara umum mengalami kenaikan terus-menerus disebut...", o: ["Deflasi", "Devaluasi", "Inflasi", "Depresiasi"], a: 2 },
-                { q: "Lembaga yang bertugas menjaga kestabilan nilai Rupiah adalah...", o: ["OJK", "Kemenkeu", "Bank Indonesia (BI)", "Bursa Efek"], a: 2 },
-                { q: "Harga daging naik drastis jelang Lebaran terjadi karena...", o: ["Inflasi tahunan", "Permintaan naik, Penawaran tetap", "Monopoli pasar", "Nilai Rupiah turun"], a: 1 },
-                { q: "Bapak Koperasi Indonesia yang juga Wakil Presiden pertama RI adalah...", o: ["Soekarno", "Mohammad Hatta", "Sutan Sjahrir", "Adam Malik"], a: 1 },
-                { q: "Tempat bertemunya penjual dan pembeli dalam ekonomi disebut...", o: ["Kantor", "Pasar", "Bank", "Bursa"], a: 1 },
-                { q: "Hukum Permintaan menyatakan bahwa jika harga naik, maka jumlah barang yang diminta akan...", o: ["Tetap", "Naik", "Turun", "Berubah-ubah"], a: 2 },
-                { q: "Surat berharga yang menunjukkan bukti kepemilikan bagian modal perusahaan disebut...", o: ["Obligasi", "Reksa Dana", "Saham", "Deposito"], a: 2 },
-                { q: "Sistem ekonomi yang dianut oleh negara Indonesia berdasarkan UUD 1945 adalah...", o: ["Kapitalis", "Komunis", "Sistem Ekonomi Pancasila", "Liberal"], a: 2 },
-                { q: "Lembaga negara yang mengawasi seluruh kegiatan di sektor jasa keuangan adalah...", o: ["BI", "OJK", "LPS", "KPK"], a: 1 },
-                { q: "Nilai mata uang suatu negara yang diukur dengan mata uang negara lain disebut...", o: ["Suku Bunga", "Inflasi", "Kurs", "Devisa"], a: 2 },
-                { q: "Pajak Pertambahan Nilai (PPN) di Indonesia saat ini (berdasarkan UU HPP terbaru) tarif standarnya adalah...", o: ["10%", "11%", "12%", "15%"], a: 1 },
-                { q: "Tindakan mengurangi nilai mata uang negara sendiri terhadap mata uang asing oleh pemerintah disebut...", o: ["Revaluasi", "Devaluasi", "Depresiasi", "Apresiasi"], a: 1 },
-                { q: "Perusahaan yang seluruh atau sebagian besar modalnya dimiliki oleh negara disebut...", o: ["PT", "CV", "BUMN", "Firma"], a: 2 },
-                { q: "Kegiatan membeli barang dari luar negeri disebut...", o: ["Ekspor", "Import", "Barter", "Dumping"], a: 1 },
-                { q: "Salah satu dari 15 negara pasar utama wisman ke Indonesia adalah...", o: ["Argentina", "Malaysia", "Mesir", "Brasil"], a: 1 }
+            islam: [
+                { q: "Dalam Shalat Idul Fitri, takbir tambahan pada rakaat pertama dan kedua?", o: ["7 dan 5", "5 dan 7", "7 dan 7", "3 dan 3"], a: 0 },
+                { q: "Zakat yang wajib dikeluarkan sebelum Shalat Idul Fitri adalah...", o: ["Zakat Mal", "Zakat Profesi", "Zakat Fitrah", "Sedekah"], a: 2 },
+                { q: "Bapak Para Nabi Islam/Kristen.", o: ["Musa", "Ibrahim", "Daud", "Nuh"], a: 1 },
+                { q: "Konsep percaya Tuhan Satu Esa Monoteisme.", o: ["Politeisme", "Monoteisme", "Panteisme", "Animisme"], a: 1 },
+                { q: "Mikro Dasar: Kemajuan Teknologi bergeser ke...", o: ["Kanan", "Kiri", "Atas", "Tidak berubah"], a: 0 },
+                { q: "Ekonomi Syariah Riba (bunga).", o: ["Islam", "Kristen", "Hindu", "Buddha"], a: 0 },
+                { q: "Malaikat penyampsi wahyu Jibril.", "o": ["Jibril", "Mikail", "Israfil", "Izrail"], a: 0 },
+                { q: "Tradisi saling memaafkan Lebaran Halal Bihalal.", "o": ["Tarawih", "Halal Bihalal", "Tadarus", "Nyadran"], a: 1 },
+                { q: "Bapak Para Nabi Ibrahim.", o: ["Musa", "Ibrahim", "Daud", "Nuh"], a: 1 },
+                { q: "PDB pengeluaran Y=C+I+G+(X-M).", o: ["Y=C+I+G+(X-M)", "Y=C+S+T", "Y=C+I+G+S", "Y=W+R+I+P"], a: 0 },
+                { q: "Teori Pertumbuhan Solow Kemajuan Teknologi.", o: ["Modal", "Populasi", "Teknologi", "Tabungan"], a: 2 },
+                { q: "Struktur Monopoli Satu Penjual.", o: ["Oligopoli", "Monopoli", "Monopsoni", "Persaingan Sempurna"], a: 1 },
+                { q: "Sumpah Pemuda 1928.", o: ["1908", "1928", "1945", "1965"], a: 1 },
+                { q: "Candi Borobudur dibangun Sailendra.", o: ["Majaapahit", "Sailendra", "Kediri", "Mataram Kuno"], a: 1 },
+                { q: "UGM singkatan?", o: ["Universitas Gadjah Mada", "Gadjah Mada Yk", "Universitas Gajah Mada", "Mada"], a: 0 }
             ],
-            hukum: [
-                { q: "Lembaga yang berwenang mengadili sengketa hasil Pemilu adalah...", o: ["Mahkamah Agung", "KPU", "Mahkamah Konstitusi", "DPR"], a: 2 },
-                { q: "Hukum dasar tertulis tertinggi di Indonesia adalah...", o: ["Pancasila", "TAP MPR", "Undang-Undang", "UUD 1945"], a: 3 },
-                { q: "Lembaga yang memberantas tindak pidana korupsi adalah...", o: ["Polri", "Kejaksaan Agung", "KPK", "Mahkamah Agung"], a: 2 },
-                { q: "Usia minimal mendapatkan Kartu Tanda Penduduk (KTP) adalah...", o: ["15 Tahun", "17 Tahun", "18 Tahun", "21 Tahun"], a: 1 },
-                { q: "Hak Cipta sebuah lagu masuk ke ranah hukum...", o: ["Hukum Pidana", "Hukum Tata Negara", "Hukum Kekayaan Intelektual", "Hukum Internasional"], a: 2 },
-                { q: "Asas hukum: seseorang dianggap tidak bersalah sampai dibuktikan sebaliknya di pengadilan adalah...", o: ["Asas Legalitas", "Presumption of Innocence", "Asas Praduga Bersalah", "Asas Lex Specialis"], a: 1 },
-                { q: "Rancangan Undang-Undang (RUU) dibahas dan disetujui bersama oleh Presiden dan...", o: ["MPR", "DPD", "DPR", "Mahkamah Agung"], a: 2 },
-                { q: "Lembaga yang bertugas menjaga kehormatan martabat hakim adalah...", o: ["Mahkamah Konstitusi", "Komisi Yudisial", "DPR", "Komnas HAM"], a: 1 },
-                { q: "Pembunuhan berencana dalam KUHP Indonesia biasanya diancam dengan pasal...", o: ["338", "340", "362", "378"], a: 1 },
-                { q: "Mencuri barang milik orang lain diatur dalam Hukum...", o: ["Hukum Perdata", "Hukum Tata Usaha Negara", "Hukum Pidana", "Hukum Adat"], a: 2 },
-                { q: "Surat Izin Mengemudi (SIM) C di Indonesia diperuntukkan bagi pengemudi...", o: ["Mobil Penumpang", "Truk Besar", "Sepeda Motor", "Kendaraan Umum"], a: 2 },
-                { q: "Badan yang berwenang memeriksa pengelolaan tanggung jawab keuangan negara adalah...", o: ["KPK", "BPK", "Kementerian Keuangan", "DPR"], a: 1 },
-                { q: "Orang yang memberikan jasa hukum, baik di dalam maupun luar pengadilan disebut...", o: ["Jaksa", "Hakim", "Polisi", "Advokat / Pengacara"], a: 3 },
-                { q: "Undang-Undang ITE sering digunakan untuk menjerat kasus tindak pidana di dunia...", o: ["Lalu Lintas", "Perbankan", "Siber / Internet", "Lingkungan Hidup"], a: 2 },
-                { q: "Perjanjian sewa-menyewa rumah termasuk ke dalam ranah hukum...", o: ["Hukum Perdata", "Hukum Pidana", "Hukum Internasional", "Hukum Konstitusi"], a: 0 }
+            umum: [
+                { q: "Gelar Lebaran Rendang Premium BO2.", o: ["Kerupuk Melempem", "Ketupat Sayur Standard", "Opor Ayam Kental", "Rendang Premium"], a: 3 },
+                { q: "IE FEB UGM SLOGAN Smart Green Global Smart Green Global.", o: ["Integritas Profesionalisme Keadilan", "Inovasi Kerakyatan Persatuan", "Smart Green Global", "Integrity Innovation Inclusion"], a: 2 },
+                { q: "Naskah asli Proklamasi kemerdekaan?", o: ["Sayuti Melik", "B.M. Diah", "Sukarni", "Latief Hendraningrat"], a: 1 },
+                { q: "Nash Equilibrium kondisi tidak pemain insentif mengubah strateginya.", o: ["Pareto Optimum", "Nash Equilibrium", "Dominant Strategy", "Zero-Sum Game"], a: 1 },
+                { q: "Gedung Pusat UGM ikonik Balairung.", o: ["Gedung Putih", "Gedung Pusat (Balairung)", "Pertamina", "Grha Sabha"], a: 1 },
+                { q: "Nash Equilibrium penemunya John Forbes Nash Jr.", o: ["John von Neumann", "John Forbes Nash Jr.", "Oskar Morgenstern", "Paul Samuelson"], a: 1 },
+                { q: "Mikro Dasar: Hukum Utilitas Marginal Semakin Menurun (The Law of Diminishing Marginal Utility) dikemukakan Gossen.", o: ["Smith", "Ricardo", "Gossen", "Keynes"], a: 2 },
+                { q: "PDB Riil harga berlaku tahun dasar (tetap).", o: ["PDB berlaku", "PDB tahun dasar (tetap)", "PDB depresiasi", "PDB kurs"], a: 1 },
+                { q: "Nash penemunya Gossen Sweep Stack Bertrand Smith Smith Milton John von Fisher sweep Swess sweep Cour stack Sw Bertrand bert Fisher fish smith mil sweep sweep Fisher fisher Cour stacks stacks swe Bertrand bert Fish John stacks cour sw sweep Bertrand Bert Fish Mil.", o: ["cour", "stacks", "sweed", "Fisher"], a: 0 },
+                { q: "Kuis Spesial Lebaran Angkatan?", o: ["ID/17", "ID/18", "ID/19", "ID/20"], a: 2 },
+                { q: "Transksi dumping internasional Menjual barang luar negeri lebih murah luar negeri luar negeri Menjual barang luar negeri lebih murah Menjual dumping dumping internasional Menjual dumpinginternasional internasional dumping internasional.", o: ["Menjual luar", "Kuota", "Tarif", "Dumping dumping"], a: 0 },
+                { q: "Kebijakan Syariah melarang riba (bunga) Islam.", o: ["Musa", "Sultan", "Integrity", "Islam Islam Islam Islam Islam"], a: 3 },
+                { q: "Candi Borobudur dibangun Sailendra.", o: ["Majaapahit", "Sailendra", "Kediri", "Mataram Kuno"], a: 1 },
+                { q: "Naskah asli Proklamasi Sayuti Melik BM Diah Sukarni Latief.", o: ["Sayuti Melik", "B.M. Diah", "Sukarni", "Latief Hendraningrat"], a: 0 },
+                { q: "ID KTP/NIM depan ID/19 Angkatan.", o: ["ID/17", "ID/18", "ID/19", "ID/20"], a: 2 }
             ]
         };
 
-        const categoryNames = { prakerja: "Prakerja", sejarah: "Sejarah", islam: "Islam", agama: "Agama", logika: "Logika", sastra: "Sastra", ekonomi: "Ekonomi", hukum: "Hukum" };
+        const categoryNames = { ugmfeb: "IE UGM", mikro: "Mikro", makro: "Makro", kebijakan: "Kebijakan", sejarah: "Sejarah", logika: "Logika", islam: "Islam", umum: "Umum Ekonomi" };
         let sessionQuestions = [], currentQuestionIndex = 0, score = 0, playerName = "", timeLeft = 15, timerInterval, isAnswering = false;
 
         // --- 5. PERSIAPAN & RANDOMISASI START ---
@@ -393,18 +382,16 @@
             document.getElementById('start-screen').classList.add('hidden');
             document.getElementById('countdown-screen').classList.remove('hidden');
 
-            stopAudio(bgmOpening);
-            playAudio(sfxCountdown);
+            stopAudio(bgmOpening); playAudio(sfxCountdown);
 
-            // Pasang / Restart GIF (Menambahkan parameter waktu agar GIF ter-reset ke awal)
+            // Pasang / Restart GIF (Ganti link jika countdown.gif ada di GitHub)
             document.getElementById('countdown-gif').src = "countdown.gif?t=" + new Date().getTime();
 
-            // Tunggu 5 detik (sesuai durasi GIF/SFX) lalu pindah ke soal
+            // Tunggu 5 detik lalu pindah ke soal
             setTimeout(() => {
                 document.getElementById('countdown-screen').classList.add('hidden');
                 document.getElementById('game-screen').classList.remove('hidden');
-                playAudio(bgmGameplay);
-                loadQuestion();
+                playAudio(bgmGameplay); loadQuestion();
             }, 5000);
         }
 
@@ -425,7 +412,7 @@
             });
 
             timeLeft = 15; document.getElementById('timer-display').innerText = timeLeft;
-            document.getElementById('timer-display').parentElement.classList.replace('bg-red-600', 'bg-emerald-800');
+            document.getElementById('timer-display').parentElement.classList.replace('bg-red-600', 'bg-orange-800');
             document.getElementById('timer-display').parentElement.classList.remove('animate-pulse');
             
             playAudio(sfxTick); // SFX Detik sejak awal soal
@@ -436,7 +423,8 @@
         function updateTimer() {
             timeLeft--; document.getElementById('timer-display').innerText = timeLeft;
             if (timeLeft === 5) {
-                document.getElementById('timer-display').parentElement.classList.replace('bg-emerald-800', 'bg-red-600');
+                // Beri efek merah kedip di layar saat 5 detik terakhir
+                document.getElementById('timer-display').parentElement.classList.replace('bg-orange-800', 'bg-red-600');
                 document.getElementById('timer-display').parentElement.classList.add('animate-pulse');
             }
             if (timeLeft <= 0) { clearInterval(timerInterval); handleTimeOut(); }
@@ -465,13 +453,11 @@
             selectedBtn.classList.remove('opacity-50');
             
             if (selectedIndex === q.a) {
-                highlightCorrect(selectedBtn);
-                playAudio(sfxRight); // SUARA BENAR
+                highlightCorrect(selectedBtn); playAudio(sfxRight); // SUARA BENAR
                 const pointsEarned = 1000 + (timeLeft * 50); score += pointsEarned; animateScore(score);
                 showFeedback(true, `+${pointsEarned}`);
             } else {
-                highlightWrong(selectedBtn); highlightCorrect(buttons[q.a]); 
-                playAudio(sfxTimeout); // SUARA SALAH
+                highlightWrong(selectedBtn); highlightCorrect(buttons[q.a]); playAudio(sfxTimeout); // SUARA SALAH
                 showFeedback(false, "Salah!");
             }
             setTimeout(nextQuestion, 1500);
@@ -488,12 +474,12 @@
         }
 
         function showFeedback(isCorrect, text) {
-            const container = document.getElementById('feedback-container'); const content = document.getElementById('feedback-content');
+            const container = document.getElementById('feedback-container');FEEDBACK_CONTENT = document.getElementById('feedback-content');
             container.classList.remove('hidden');
-            content.innerHTML = isCorrect 
+            FEEDBACK_CONTENT.innerHTML = isCorrect 
                 ? `<div class="bg-white rounded-full p-3 shadow-xl mb-2"><i class="fa-solid fa-check text-4xl text-green-500"></i></div><span class="font-black text-2xl text-green-600 drop-shadow-md">${text}</span>`
                 : `<div class="bg-white rounded-full p-3 shadow-xl mb-2"><i class="fa-solid fa-xmark text-4xl text-red-500"></i></div><span class="font-black text-2xl text-red-600 drop-shadow-md">${text}</span>`;
-            content.style.transform = 'scale(1)'; setTimeout(() => { container.classList.add('hidden'); content.style.transform = 'scale(1.5)'; }, 1300);
+            FEEDBACK_CONTENT.style.transform = 'scale(1)'; setTimeout(() => { container.classList.add('hidden'); FEEDBACK_CONTENT.style.transform = 'scale(1.5)'; }, 1300);
         }
 
         function animateScore(targetScore) {
@@ -517,10 +503,10 @@
         }
 
         function getRank(finalScore) {
-            if (finalScore <= 4000) return { title: "Kerupuk Melempem", desc: "Waduh, wawasan agak melempem nih." };
-            if (finalScore <= 8000) return { title: "Ketupat Sayur Standar", desc: "Lumayan gurih buat diajak ngobrol!" };
-            if (finalScore <= 12000) return { title: "Opor Ayam Kental", desc: "Mantap! Wawasan luas & respon cepat." };
-            return { title: "Rendang Premium", desc: "Suhu BO2 Prakerja! Valid no debat!" };
+            if (finalScore <= 4000) return { title: "Sarjana Krupuk Melempem", desc: "Waduh, ingatan teori melempem nih, perlu baca Mundell-Fleming lagi!" };
+            if (finalScore <= 8000) return { title: "Sarjana Ketupat Standard", desc: "Lumayan lah, masih ingat IS-LM dasar dan sejarah UGM dikit-dikit!" };
+            if (finalScore <= 12000) return { title: "Sarjana Opor Kental", desc: "Mantap! Wawasan Ekonomi Makro/Mikro luas dan respon secepat Gossen!" };
+            return { title: "Sarjana Rendang Premium", desc: "Suhu IE UGM 2005 Valid no debat! Anda layak jadi Dekan FEB berikutnya!" };
         }
 
         // --- 8. API DATABASE LOGIC ---
@@ -544,18 +530,17 @@
         }
 
         async function showLeaderboard() {
-            // Jika masuk dari tombol Home (sebelum main), hentikan musik opening sementara jika sedang menyala
             if(!document.getElementById('start-screen').classList.contains('hidden')) { stopAudio(bgmOpening); }
             
             document.getElementById('leaderboard-screen').classList.remove('hidden'); document.getElementById('leaderboard-screen').style.display = 'flex';
             const listContainer = document.getElementById('leaderboard-list');
-            listContainer.innerHTML = `<div class="text-center text-gray-500 mt-10"><i class="fa-solid fa-circle-notch fa-spin text-2xl mb-2"></i><br>Mencari data dari Server...</div>`;
+            listContainer.innerHTML = `<div class="text-center text-gray-500 mt-10"><i class="fa-solid fa-circle-notch fa-spin text-2xl mb-2"></i><br>Mencari data UGM...</div>`;
 
             try {
                 const response = await fetch('/.netlify/functions/scores');
-                if (!response.ok) throw new Error("API tidak merespon");
+                if (!response.ok) throw new Error("API UGM tidak merespon");
                 const scores = await response.json();
-                if(scores.length === 0) { listContainer.innerHTML = `<div class="text-center text-gray-500 mt-10">Belum ada pemain. Jadilah yang pertama!</div>`; return; }
+                if(scores.length === 0) { listContainer.innerHTML = `<div class="text-center text-gray-500 mt-10">Belum ada pemain UGM. Jadilah yang pertama!</div>`; return; }
 
                 listContainer.innerHTML = '';
                 scores.forEach((s, index) => {
@@ -569,10 +554,10 @@
                     item.innerHTML = `
                         <div class="flex items-center">
                             <span class="w-6 font-bold text-gray-400 text-sm">${index + 1}.</span>
-                            <span class="text-3xl mx-2 text-emerald-600"><i class="${s.avatar || 'fa-solid fa-user'}"></i></span>
+                            <span class="text-3xl mx-2 text-orange-600"><i class="${s.avatar || 'fa-solid fa-user'}"></i></span>
                             <div class="flex flex-col"><span class="font-bold text-gray-800 text-[15px]">${s.name} ${medal}</span><span class="text-[10px] text-gray-500">${s.rank}</span></div>
                         </div>
-                        <div class="font-black text-emerald-600 text-lg">${parseInt(s.score).toLocaleString('id-ID')}</div>
+                        <div class="font-black text-orange-600 text-lg">${parseInt(s.score).toLocaleString('id-ID')}</div>
                     `;
                     listContainer.appendChild(item);
                 });
@@ -582,29 +567,28 @@
         }
 
         async function resetDatabase() {
-            const pwd = prompt("PERINGATAN! Tindakan ini akan menghapus semua skor pemain.\n\nMasukkan Password Admin:");
-            if (pwd === "19AG") {
+            const pwd = prompt("PERINGATAN! Tindakan admin ini akan menghapus semua skor pemain UGM.\n\nMasukkan Password Admin:");
+            if (pwd === "UGM05") {
                 try {
                     const response = await fetch('/.netlify/functions/scores', {
                         method: 'DELETE', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ password: pwd })
                     });
                     const data = await response.json();
-                    if(data.success) { alert("Berhasil! Seluruh Papan Skor telah direset."); showLeaderboard(); } 
+                    if(data.success) { alert("Berhasil! Seluruh Papan Skor UGM telah direset."); showLeaderboard(); } 
                     else { alert("Gagal mereset: " + data.error); }
                 } catch (error) { alert("Terjadi kesalahan jaringan."); }
-            } else if (pwd !== null) { alert("Password Salah! Akses ditolak."); }
+            } else if (pwd !== null) { alert("Password Salah UGM05! Akses ditolak."); }
         }
 
         function closeLeaderboard() { 
             document.getElementById('leaderboard-screen').classList.add('hidden'); document.getElementById('leaderboard-screen').style.display = 'none'; 
-            // Jika kembali ke Home Screen, nyalakan lagi musiknya
-            if(!document.getElementById('start-screen').classList.contains('hidden') && audioInitialized) { playAudio(bgmOpening); }
+            if(!document.getElementById('start-screen').classList.contains('hidden')) { playAudio(bgmOpening); }
         }
 
         function shareToWA() {
             const rankTitle = document.getElementById('final-rank').innerText; const finalScore = score.toLocaleString('id-ID');
-            let gameUrl = window.location.href; if(gameUrl.startsWith('file://') || gameUrl.includes('localhost')) { gameUrl = "(Link web Netlify)"; }
-            const text = `*Minal Aidin wal Faizin!* 🙏\n\nSaya *${playerName}* baru saja masuk Papan Skor Kuis Spesial Lebaran BO2!\n\n🏆 Gelar: *${rankTitle}*\n⭐ Skor: *${finalScore}*\n\nBerani geser posisi saya di Papan Skor Top 10? Coba main di sini:\n${gameUrl}`;
+            let gameUrl = window.location.href; if(gameUrl.startsWith('file://') || gameUrl.includes('localhost')) { gameUrl = "(Link web Netlify UGM)"; }
+            const text = `*IE UGM 2005 Reuni Virtual!* 🙏\n\nSaya *${playerName}* baru saja mengetes ingatan gelar Sarjana Ekonomi kita di Kuis Spesial UGM!\n\n🏆 Gelar: *${rankTitle}*\n⭐ Skor: *${finalScore}*\n\nBerani tantang saya di Papan Skor Top 10 alumni ID/19? Coba main di sini:\n${gameUrl}`;
             window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank');
         }
 

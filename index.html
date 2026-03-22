@@ -589,7 +589,7 @@
         function shareToWA() {
             const rankTitle = document.getElementById('final-rank').innerText; const finalScore = score.toLocaleString('id-ID');
             let gameUrl = window.location.href; if(gameUrl.startsWith('file://') || gameUrl.includes('localhost')) { gameUrl = "(Link web Netlify UGM)"; }
-            const text = `*IE UGM 2005 Reuni Virtual!* 🙏\n\nSaya *${playerName}* baru saja mengetes ingatan gelar Sarjana Ekonomi kita di Kuis Spesial UGM!\n\n🏆 Gelar: *${rankTitle}*\n⭐ Skor: *${finalScore}*\n\nBerani tantang saya di Papan Skor Top 10 alumni ID/19? Coba main di sini:\n${gameUrl}`;
+            const text = `*Minal Aidin Wal Faizdin, Mohon Maaf Lahir dan Batin* 🙏\n\nSaya *${playerName}* baru saja mengetes ingatan gelar Sarjana Ekonomi kita di Kuis Spesial UGM!\n\n🏆 Gelar: *${rankTitle}*\n⭐ Skor: *${finalScore}*\n\nBerani tantang saya di Papan Skor Top 10 alumni ID/19? Coba main di sini:\n${gameUrl}`;
             window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank');
         }
 
